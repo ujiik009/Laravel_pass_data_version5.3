@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ProfileController extends Controller
 {
     
-	function getProfile($id){
+	function getProfile($id=null){
 		$data = $this->get_data_profile();
 		//return view("profiles",['data'=> $data]);
 		return view('homework2',['profiles'=>$data]);

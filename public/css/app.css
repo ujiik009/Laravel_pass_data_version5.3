@@ -7670,9 +7670,9 @@ button.close {
   }
 }
 
-.img-profile {
-  width: auto;
-  height: 300px;
+.col-R {
+  background: #fff1b7;
+  box-shadow: 2px -3px 5px 0px rgba(0, 0, 0, 0.38);
 }
 
 /*# sourceMappingURL=app.css.map */

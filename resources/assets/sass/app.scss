@@ -9,6 +9,12 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 .img-profile{
-	width: auto;
-	height: 300px;
+	// width: auto;
+	// height: 300px;
+}
+.col-R{
+	background: #fff1b7;
+	-webkit-box-shadow: 2px -3px 5px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 2px -3px 5px 0px rgba(0,0,0,0.38);
+box-shadow: 2px -3px 5px 0px rgba(0,0,0,0.38);
 }

@@ -8,10 +8,33 @@ class ProfileController extends Controller
 {
     
 	function getProfile($id){
-		$data = $this->data_array();
-		return view("profile",['data'=> $data]);
+		$data = $this->get_data_profile();
+		//return view("profiles",['data'=> $data]);
+		return view('homework2',['profiles'=>$data]);
 	}
 
+
+	function get_data_profile(){
+		$profile = [
+			'name'  => 'Mr.Apirat Pramchana',
+			'age'   => '23',
+			'skills'=> [
+				'programming' => [
+					'php (laravel,Ci)',
+					'js (jquery,vue,react)',
+					'css (bootstrap,bulma)',
+					'Unity3D (c#)'
+				],
+				'sport' =>[
+					'badminton'
+				]
+			],
+			'degree' => 'Bachelor Degree Faculty of Science BSRU',
+			'contact'=> '<a href="https://www.facebook.com/">facebook</a>'
+		];
+
+		return $profile;
+	}
 	function data_array(){
 		$data = array(
 			  array('number_student' => '1','student_code' => '5521310369','student_name' => 'นายนนทรี ปานแสง ','student_sec' => 'D15'),

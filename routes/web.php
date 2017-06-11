@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+// route data 
 Route::get('/profile/{id}', "ProfileController@getProfile")->where(["id"=>'[0-9]+']);
 

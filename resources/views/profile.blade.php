@@ -12,11 +12,17 @@
 
 		
 			<div class="col-md-6">
-				@for($i = 1 ; $i<=12 ; $i++)
-					{{-- <p>Name : Apirat Pramchana</p>
-					<p>Comtact : <a href="https://www.facebook.com/">facebook</a></p> --}}
-					<li>{{$num}} * {{$i}} = {{$i * $num}}</li>
-				@endfor
+				@foreach ($data as $infomation)
+					<div>
+						<p>รหัสประจำตัว : {{$infomation['student_code']}}</p>
+						<p>ชื้อขนามสกุล : {{$infomation['student_name']}}</p>
+						<p>หมู่เรียน : {{$infomation['student_sec']}}</p>
+					</div>
+				@endforeach
+
+				
+				
+				
 			</div>
 		
 	</div>

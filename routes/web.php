@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 // route data 
 Route::get('/profile/{id?}', "ProfileController@getProfile")->where(["id"=>'[0-9]+']);
-Route::get('/app', function(){
-	return view('home');
-});
+
+Route::get('/app', 'ReminerController@home');
 
